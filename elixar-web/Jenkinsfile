@@ -1,0 +1,21 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Build') {
+            steps {
+                echo 'Building elixar-web prod..'
+            }
+        }
+        stage('Test') {
+            steps {
+                echo 'Testing elixar-web prod..'
+            }
+        }
+        stage('Deploy') {
+            steps {
+                echo 'Deploying elixar-web prod....'
+            }
+        }
+    }
+}
