@@ -1,6 +1,7 @@
 node {
     stage('Configuration') {
         properties([pipelineTriggers([[$class: 'GitHubPushTrigger'], pollSCM('H/15 * * * *')])])
+        checkout scm
         echo 'Deploying elixar-web prod scripted....'
     }
     stage('Preparation') {
