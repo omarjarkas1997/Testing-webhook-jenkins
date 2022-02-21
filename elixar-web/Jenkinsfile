@@ -1,15 +1,15 @@
 node {
     stage('Configuration') {
         properties([pipelineTriggers([[$class: 'GitHubPushTrigger'], pollSCM('H/15 * * * *')])])
-        echo 'Deploying elixar-web prod....'
+        echo 'Deploying elixar-web prod scripted....'
     }
     stage('Preparation') {
-            echo 'Deploying elixar-web prod....'
+            echo 'Deploying elixar-web prod scripted....'
     }
     stage ("Install dependencies") {
-            echo 'Deploying elixar-web prod....'
+            echo 'Deploying elixar-web prod scripted....'
     }
     stage('Build') {
-            echo 'Deploying elixar-web prod....'
+            echo 'Deploying elixar-web prod scripted....'
     }
 }
