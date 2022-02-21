@@ -2,6 +2,7 @@ pipeline {
     agent any
     triggers {
             githubPush()
+            echo 'Building elixar-web prod..'
         }
     stages {
         stage('Build') {
